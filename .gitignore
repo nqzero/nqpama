@@ -21,4 +21,7 @@ po/.intltool-merge-cache
 src/.libs
 src/.deps
 *.gmo
-
+.dep.inc
+nbproject/Makefile*
+nbproject/private
+nbproject/Package-Default.bash
