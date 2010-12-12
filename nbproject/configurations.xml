@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="69">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <df name="pama" root="/home/lytles/working/apps/pama">
+    <df name="pama" root=".">
       <df name="autom4te.cache">
       </df>
       <df name="build-aux">
@@ -47,13 +47,13 @@
                    displayName="Important Files"
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
-      <itemPath>/home/lytles/working/apps/pama/Makefile</itemPath>
+      <itemPath>./Makefile</itemPath>
       <itemPath>Makefile-pama.mk</itemPath>
-      <itemPath>/home/lytles/working/apps/pama/configure</itemPath>
+      <itemPath>./configure</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>/home/lytles/working/apps/pama</Elem>
+    <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile-pama.mk</projectmakefile>
   <confs>
@@ -65,7 +65,7 @@
       </toolsSet>
       <makefileType>
         <makeTool>
-          <buildCommandWorkingDir>/home/lytles/working/apps/pama</buildCommandWorkingDir>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
           <buildCommand>$(MAKE) -f Makefile</buildCommand>
           <cleanCommand>$(MAKE) -f Makefile clean</cleanCommand>
           <executablePath>src/pulseaudio-mixer-applet</executablePath>
@@ -87,7 +87,7 @@
           </cTool>
         </makeTool>
       </makefileType>
-      <item path="/home/lytles/working/apps/pama/src/main.c" ex="false" tool="0">
+      <item path="./src/main.c" ex="false" tool="0">
         <cTool>
           <incDir>
             <pElem>/usr/include/libbonoboui-2.0</pElem>
@@ -120,163 +120,7 @@
           </incDir>
         </cTool>
       </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-applet.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>/usr/include/libbonoboui-2.0</pElem>
-            <pElem>/usr/include/pango-1.0/pango</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit/util</pElem>
-            <pElem>/usr/include/orbit-2.0</pElem>
-            <pElem>/usr/include/cairo</pElem>
-            <pElem>../install/lib/gtk-2.0/include</pElem>
-            <pElem>../install/include/glib-2.0/gio</pElem>
-            <pElem>../install/include/gtk-2.0</pElem>
-            <pElem>/usr/include/gdk-pixbuf-2.0</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit/orb-core</pElem>
-            <pElem>../install/include/gtk-2.0/gdk</pElem>
-            <pElem>/usr/include/bonobo-activation-2.0</pElem>
-            <pElem>/usr/include/panel-2.0</pElem>
-            <pElem>/usr/include/bonobo-activation-2.0/bonobo-activation</pElem>
-            <pElem>/usr/include/atk-1.0</pElem>
-            <pElem>../install/include/gtk-2.0/gtk</pElem>
-            <pElem>/usr/include/gdk-pixbuf-2.0/gdk-pixbuf</pElem>
-            <pElem>/usr/include/libbonobo-2.0/bonobo</pElem>
-            <pElem>/usr/include/libbonoboui-2.0/bonobo</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit/poa</pElem>
-            <pElem>.</pElem>
-            <pElem>/usr/include/pulse</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit</pElem>
-            <pElem>/usr/include/pango-1.0</pElem>
-            <pElem>/usr/include/libbonobo-2.0</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit/dynamic</pElem>
-            <pElem>/usr/include/atk-1.0/atk</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-popup.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>/usr/include/libbonoboui-2.0</pElem>
-            <pElem>/usr/include/pango-1.0/pango</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit/util</pElem>
-            <pElem>/usr/include/orbit-2.0</pElem>
-            <pElem>/usr/include/cairo</pElem>
-            <pElem>../install/lib/gtk-2.0/include</pElem>
-            <pElem>../install/include/glib-2.0/gio</pElem>
-            <pElem>../install/include/gtk-2.0</pElem>
-            <pElem>/usr/include/gdk-pixbuf-2.0</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit/orb-core</pElem>
-            <pElem>../install/include/gtk-2.0/gdk</pElem>
-            <pElem>/usr/include/bonobo-activation-2.0</pElem>
-            <pElem>/usr/include/panel-2.0</pElem>
-            <pElem>/usr/include/bonobo-activation-2.0/bonobo-activation</pElem>
-            <pElem>/usr/include/atk-1.0</pElem>
-            <pElem>../install/include/gtk-2.0/gtk</pElem>
-            <pElem>/usr/include/gdk-pixbuf-2.0/gdk-pixbuf</pElem>
-            <pElem>/usr/include/libbonobo-2.0/bonobo</pElem>
-            <pElem>/usr/include/libbonoboui-2.0/bonobo</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit/poa</pElem>
-            <pElem>.</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit</pElem>
-            <pElem>/usr/include/pango-1.0</pElem>
-            <pElem>/usr/include/libbonobo-2.0</pElem>
-            <pElem>/usr/include/orbit-2.0/orbit/dynamic</pElem>
-            <pElem>/usr/include/atk-1.0/atk</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-pulse-client.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>.</pElem>
-            <pElem>/usr/include/pulse</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-pulse-context.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>../install/include/glib-2.0/gio</pElem>
-            <pElem>.</pElem>
-            <pElem>/usr/include/pulse</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-pulse-sink-input.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>../install/include/glib-2.0/gio</pElem>
-            <pElem>.</pElem>
-            <pElem>/usr/include/pulse</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-pulse-sink.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>../install/include/glib-2.0/gio</pElem>
-            <pElem>.</pElem>
-            <pElem>/usr/include/pulse</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-pulse-source-output.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>../install/include/glib-2.0/gio</pElem>
-            <pElem>.</pElem>
-            <pElem>/usr/include/pulse</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-pulse-source.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>../install/include/glib-2.0/gio</pElem>
-            <pElem>.</pElem>
-            <pElem>/usr/include/pulse</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-sink-input-widget.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>../install/include/gtk-2.0/gtk</pElem>
-            <pElem>/usr/include/gdk-pixbuf-2.0/gdk-pixbuf</pElem>
-            <pElem>/usr/include/pango-1.0/pango</pElem>
-            <pElem>/usr/include/cairo</pElem>
-            <pElem>../install/include/glib-2.0/gio</pElem>
-            <pElem>../install/lib/gtk-2.0/include</pElem>
-            <pElem>.</pElem>
-            <pElem>/usr/include/pulse</pElem>
-            <pElem>../install/include/gtk-2.0</pElem>
-            <pElem>/usr/include/gdk-pixbuf-2.0</pElem>
-            <pElem>/usr/include/pango-1.0</pElem>
-            <pElem>../install/include/gtk-2.0/gdk</pElem>
-            <pElem>/usr/include/atk-1.0</pElem>
-            <pElem>/usr/include/atk-1.0/atk</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-sink-popup.c"
+      <item path="./src/pama-applet.c"
             ex="false"
             tool="0">
         <cTool>
@@ -311,7 +155,106 @@
           </incDir>
         </cTool>
       </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-sink-widget.c"
+      <item path="./src/pama-popup.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/libbonoboui-2.0</pElem>
+            <pElem>/usr/include/pango-1.0/pango</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit/util</pElem>
+            <pElem>/usr/include/orbit-2.0</pElem>
+            <pElem>/usr/include/cairo</pElem>
+            <pElem>../install/lib/gtk-2.0/include</pElem>
+            <pElem>../install/include/glib-2.0/gio</pElem>
+            <pElem>../install/include/gtk-2.0</pElem>
+            <pElem>/usr/include/gdk-pixbuf-2.0</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit/orb-core</pElem>
+            <pElem>../install/include/gtk-2.0/gdk</pElem>
+            <pElem>/usr/include/bonobo-activation-2.0</pElem>
+            <pElem>/usr/include/panel-2.0</pElem>
+            <pElem>/usr/include/bonobo-activation-2.0/bonobo-activation</pElem>
+            <pElem>/usr/include/atk-1.0</pElem>
+            <pElem>../install/include/gtk-2.0/gtk</pElem>
+            <pElem>/usr/include/gdk-pixbuf-2.0/gdk-pixbuf</pElem>
+            <pElem>/usr/include/libbonobo-2.0/bonobo</pElem>
+            <pElem>/usr/include/libbonoboui-2.0/bonobo</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit/poa</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit</pElem>
+            <pElem>/usr/include/pango-1.0</pElem>
+            <pElem>/usr/include/libbonobo-2.0</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit/dynamic</pElem>
+            <pElem>/usr/include/atk-1.0/atk</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-pulse-client.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>/usr/include/pulse</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-pulse-context.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>../install/include/glib-2.0/gio</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/pulse</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-pulse-sink-input.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>../install/include/glib-2.0/gio</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/pulse</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-pulse-sink.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>../install/include/glib-2.0/gio</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/pulse</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-pulse-source-output.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>../install/include/glib-2.0/gio</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/pulse</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-pulse-source.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>../install/include/glib-2.0/gio</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/pulse</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-sink-input-widget.c"
             ex="false"
             tool="0">
         <cTool>
@@ -333,29 +276,7 @@
           </incDir>
         </cTool>
       </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-source-output-widget.c"
-            ex="false"
-            tool="0">
-        <cTool>
-          <incDir>
-            <pElem>../install/include/gtk-2.0/gtk</pElem>
-            <pElem>/usr/include/gdk-pixbuf-2.0/gdk-pixbuf</pElem>
-            <pElem>/usr/include/pango-1.0/pango</pElem>
-            <pElem>/usr/include/cairo</pElem>
-            <pElem>../install/include/glib-2.0/gio</pElem>
-            <pElem>../install/lib/gtk-2.0/include</pElem>
-            <pElem>.</pElem>
-            <pElem>/usr/include/pulse</pElem>
-            <pElem>../install/include/gtk-2.0</pElem>
-            <pElem>/usr/include/gdk-pixbuf-2.0</pElem>
-            <pElem>/usr/include/pango-1.0</pElem>
-            <pElem>../install/include/gtk-2.0/gdk</pElem>
-            <pElem>/usr/include/atk-1.0</pElem>
-            <pElem>/usr/include/atk-1.0/atk</pElem>
-          </incDir>
-        </cTool>
-      </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-source-popup.c"
+      <item path="./src/pama-sink-popup.c"
             ex="false"
             tool="0">
         <cTool>
@@ -390,7 +311,86 @@
           </incDir>
         </cTool>
       </item>
-      <item path="/home/lytles/working/apps/pama/src/pama-source-widget.c"
+      <item path="./src/pama-sink-widget.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>../install/include/gtk-2.0/gtk</pElem>
+            <pElem>/usr/include/gdk-pixbuf-2.0/gdk-pixbuf</pElem>
+            <pElem>/usr/include/pango-1.0/pango</pElem>
+            <pElem>/usr/include/cairo</pElem>
+            <pElem>../install/include/glib-2.0/gio</pElem>
+            <pElem>../install/lib/gtk-2.0/include</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/pulse</pElem>
+            <pElem>../install/include/gtk-2.0</pElem>
+            <pElem>/usr/include/gdk-pixbuf-2.0</pElem>
+            <pElem>/usr/include/pango-1.0</pElem>
+            <pElem>../install/include/gtk-2.0/gdk</pElem>
+            <pElem>/usr/include/atk-1.0</pElem>
+            <pElem>/usr/include/atk-1.0/atk</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-source-output-widget.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>../install/include/gtk-2.0/gtk</pElem>
+            <pElem>/usr/include/gdk-pixbuf-2.0/gdk-pixbuf</pElem>
+            <pElem>/usr/include/pango-1.0/pango</pElem>
+            <pElem>/usr/include/cairo</pElem>
+            <pElem>../install/include/glib-2.0/gio</pElem>
+            <pElem>../install/lib/gtk-2.0/include</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/pulse</pElem>
+            <pElem>../install/include/gtk-2.0</pElem>
+            <pElem>/usr/include/gdk-pixbuf-2.0</pElem>
+            <pElem>/usr/include/pango-1.0</pElem>
+            <pElem>../install/include/gtk-2.0/gdk</pElem>
+            <pElem>/usr/include/atk-1.0</pElem>
+            <pElem>/usr/include/atk-1.0/atk</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-source-popup.c"
+            ex="false"
+            tool="0">
+        <cTool>
+          <incDir>
+            <pElem>/usr/include/libbonoboui-2.0</pElem>
+            <pElem>/usr/include/pango-1.0/pango</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit/util</pElem>
+            <pElem>/usr/include/orbit-2.0</pElem>
+            <pElem>/usr/include/cairo</pElem>
+            <pElem>../install/lib/gtk-2.0/include</pElem>
+            <pElem>../install/include/glib-2.0/gio</pElem>
+            <pElem>../install/include/gtk-2.0</pElem>
+            <pElem>/usr/include/gdk-pixbuf-2.0</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit/orb-core</pElem>
+            <pElem>../install/include/gtk-2.0/gdk</pElem>
+            <pElem>/usr/include/bonobo-activation-2.0</pElem>
+            <pElem>/usr/include/panel-2.0</pElem>
+            <pElem>/usr/include/bonobo-activation-2.0/bonobo-activation</pElem>
+            <pElem>/usr/include/atk-1.0</pElem>
+            <pElem>../install/include/gtk-2.0/gtk</pElem>
+            <pElem>/usr/include/gdk-pixbuf-2.0/gdk-pixbuf</pElem>
+            <pElem>/usr/include/libbonobo-2.0/bonobo</pElem>
+            <pElem>/usr/include/libbonoboui-2.0/bonobo</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit/poa</pElem>
+            <pElem>.</pElem>
+            <pElem>/usr/include/pulse</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit</pElem>
+            <pElem>/usr/include/pango-1.0</pElem>
+            <pElem>/usr/include/libbonobo-2.0</pElem>
+            <pElem>/usr/include/orbit-2.0/orbit/dynamic</pElem>
+            <pElem>/usr/include/atk-1.0/atk</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="./src/pama-source-widget.c"
             ex="false"
             tool="0">
         <cTool>
