@@ -26,3 +26,52 @@ Reporting Bugs
 
 Bugs should be reported on this project's Launchpad page:
 	https://launchpad.net/pama
+
+
+About this Repository
+---------------------
+
+this is a branch of the bazaar repository: https://launchpad.net/pama by Vassili Geronimos
+the most recent actity recent activity was this update:
+  42. By Vassili Geronimos on 2010-04-22, ie almost 8 months ago
+goals: make it easier to build and run in a debugger
+
+
+Changes relative to Parent
+--------------------------
+
+removed the use of the pointer/keyboard grabs which made debugging difficult
+    ie, caused a deadlock if a breakpoint was set in a callback while the grab was held
+added build instructions
+
+
+
+Build and Install from Source
+-----------------------------
+
+to build:
+    libtoolize
+    aclocal
+    autoheader
+    automake --add-missing
+    autoconf
+    # omit CFLAGS for defaults
+    # might also want to pass PKG_CONFIG_PATH, eg to use a debug-enabled gtk+
+    CFLAGS="-g -O0" ./configure
+    make
+    make install
+
+if any of the dependencies are missing, they should cause errors when ./configure is run
+    you'll need the development versions of the dependencies, ie the include files
+    on debian and ubuntu this means the "-dev" packages
+    eg, sudo apt-get install libgtk2.0-dev libpanel-applet2-0-dev libpanel-applet2-dev libpulse-dev
+
+
+note: verbose make output
+    not specific to pama, but it uses AM_SILENT_RULES, which results in make being very quite by default
+    ie, instead of printing the full gcc command line, it only prints a summary
+        eg,   CC     pulseaudio_mixer_applet-pama-pulse-context.o
+    to get the verbose output, use "make V=1"
+
+
+
