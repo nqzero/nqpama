@@ -22,3 +22,5 @@ src/.libs
 src/.deps
 *.gmo
 
+.dep.inc
+nbproject
