@@ -55,8 +55,11 @@ static void pama_popup_class_init(PamaPopupClass *klass)
 	g_type_class_add_private(klass, sizeof(PamaPopupPrivate));
 }
 
+
 static void pama_popup_init(PamaPopup *popup)
 {
+        gtk_widget_set_can_focus( GTK_WIDGET(popup), TRUE );
+        gtk_widget_add_events( GTK_WIDGET(popup), GDK_BUTTON_PRESS_MASK | GDK_KEY_PRESS_MASK);
 	g_object_connect(popup, 
 	                 "signal::size-allocate",      G_CALLBACK(pama_popup_size_allocated), NULL,
 	                 "signal::button-press-event", G_CALLBACK(pama_popup_button_pressed), NULL,
@@ -64,6 +67,9 @@ static void pama_popup_init(PamaPopup *popup)
 	                 "signal::grab-broken-event",  G_CALLBACK(pama_popup_grab_broken), NULL,
 	                 NULL);
 }
+
+
+
 
 static void pama_popup_dispose(GObject *gobject)
 {
@@ -91,6 +97,8 @@ static gboolean pama_popup_restore_grabs(PamaPopup *popup)
 {
 	GdkWindow *window = gtk_widget_get_window(GTK_WIDGET(popup));
 
+        if (1) return TRUE;
+
 	return (GDK_GRAB_SUCCESS == gdk_pointer_grab(window, TRUE, GDK_BUTTON_PRESS_MASK, NULL, NULL, GDK_CURRENT_TIME) &&
 	        GDK_GRAB_SUCCESS == gdk_keyboard_grab(window, TRUE, GDK_CURRENT_TIME));
 }
@@ -101,6 +109,7 @@ static void pama_popup_map_event(GtkWidget *widget, GdkEvent *event, gpointer da
 	// Grab the pointer. If that fails, close the popup.
 	if (!pama_popup_restore_grabs(PAMA_POPUP(widget)))
 		gtk_widget_destroy(widget);
+        gtk_widget_grab_focus( widget );
 }
 
 void pama_popup_set_popup_alignment(PamaPopup *popup, GtkWidget *align_widget, PanelAppletOrient orientation)
@@ -237,6 +246,11 @@ static gboolean pama_popup_button_pressed(GtkWidget *widget, GdkEventButton *eve
 {
 	GtkAllocation popupAllocation;
 	gtk_widget_get_allocation(widget, &popupAllocation);
+
+        if (TRUE) {
+            gtk_widget_destroy( widget );
+            return TRUE;
+        }
 
 	if (event->x < 0 || popupAllocation.width  < event->x ||
 	    event->y < 0 || popupAllocation.height < event->y  )

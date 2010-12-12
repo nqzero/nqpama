@@ -420,7 +420,7 @@ PamaSourcePopup* pama_source_popup_new(PamaPulseContext *context)
 {
 	return g_object_new(PAMA_TYPE_SOURCE_POPUP,
 	                    "type", GTK_WINDOW_TOPLEVEL,
-	                    "type-hint", GDK_WINDOW_TYPE_HINT_DOCK,
+	                    "type-hint", GDK_WINDOW_TYPE_HINT_NORMAL,
 	                    "decorated", FALSE,
 	                    "resizable", FALSE,
 	                    "skip-pager-hint", TRUE,

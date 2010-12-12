@@ -23,6 +23,7 @@
 #endif
 #include <glib.h>
 #include <glib/gi18n.h>
+#include <gtk-2.0/gdk/gdkwindow.h>
  
 #include "pama-sink-popup.h"
 #include "pama-sink-widget.h"
@@ -57,8 +58,10 @@ struct _PamaSinkPopupPrivate
 	gulong sink_input_removed_handler_id;
 };
 
+
 G_DEFINE_TYPE(PamaSinkPopup, pama_sink_popup, PAMA_TYPE_POPUP);
 #define PAMA_SINK_POPUP_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE((obj), PAMA_TYPE_SINK_POPUP, PamaSinkPopupPrivate))
+
 
 enum
 {
@@ -423,7 +426,7 @@ PamaSinkPopup* pama_sink_popup_new(PamaPulseContext *context)
 {
 	return g_object_new(PAMA_TYPE_SINK_POPUP,
 	                    "type", GTK_WINDOW_TOPLEVEL,
-	                    "type-hint", GDK_WINDOW_TYPE_HINT_DOCK,
+	                    "type-hint", GDK_WINDOW_TYPE_HINT_NORMAL,
 	                    "decorated", FALSE,
 	                    "resizable", FALSE,
 	                    "skip-pager-hint", TRUE,

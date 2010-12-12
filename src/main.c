@@ -42,7 +42,6 @@ static gboolean pama_create(PanelApplet *applet, const gchar *iid, gpointer data
 	}
 	
 	pama_applet_set_api(PAMA_APPLET(applet), api);
-	
 	return TRUE;
 }
 
