@@ -1,0 +1,130 @@
+# Simplified Chinese translation for pama
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the pama package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pama\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-06-30 00:30+1000\n"
+"PO-Revision-Date: 2010-02-07 02:27+0000\n"
+"Last-Translator: Launchpad Translations Administrators "
+"<rosetta@launchpad.net>\n"
+"Language-Team: Simplified Chinese <zh_CN@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-02-08 04:47+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../src/main.c:34 ../src/main.c:50 ../src/pama-pulse-context.c:305
+#: ../src/PulseAudioMixerApplet.server.in.in.h:2
+msgid "PulseAudio Mixer Applet"
+msgstr "PulseAudio混合器小应用"
+
+#: ../src/pama-applet.c:87 ../src/pama-applet.c:88 ../src/pama-applet.c:188
+#: ../src/pama-applet.c:189
+msgid "Not connected to PulseAudio server"
+msgstr "未连到PulseAudio服务器"
+
+#: ../src/pama-applet.c:167 ../src/pama-applet.c:168
+msgid "No information received yet"
+msgstr "资料还未收到"
+
+#: ../src/pama-applet.c:321 ../src/pama-applet.c:388
+msgid "muted"
+msgstr "已静音"
+
+#: ../src/pama-applet.c:364
+msgid "No information for the default output device is available"
+msgstr "没有关于默认输出器的资料"
+
+#: ../src/pama-applet.c:419
+msgid "No information for the default input device is available"
+msgstr "没有关于默认输入器的资料"
+
+#: ../src/pama-applet.c:600
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Alexey Kotlyarov https://launchpad.net/~koterpillar\n"
+"  Kyle WANG https://launchpad.net/~osfans"
+
+#: ../src/pama-applet.c:607
+msgid "About Pulseaudio Mixer Applet"
+msgstr "关于Pulseaudio 混合器小应用"
+
+#: ../src/pama-applet.c:610
+msgid "Per-application volume control for your GNOME panel."
+msgstr "各个应用音量控制在GNOME嵌板。"
+
+#: ../src/pama-applet.c:611
+msgid "© 2009 Vassili Geronimos"
+msgstr "© 2009 Vassili Geronimos"
+
+#: ../src/pama-sink-input-widget.c:175
+msgid "Mute this application's audio output"
+msgstr "静音这个应用的音频输出"
+
+#: ../src/pama-sink-input-widget.c:181
+msgid "Select which output device to use for this application"
+msgstr "选择这个应用的输出设备"
+
+#: ../src/pama-sink-popup.c:88
+msgid "Playback Devices"
+msgstr "音频播放设备"
+
+#: ../src/pama-sink-popup.c:104 ../src/pama-source-popup.c:104
+msgid "Applications"
+msgstr "应用程序"
+
+#: ../src/pama-sink-widget.c:193
+msgid "Mute audio output from this device"
+msgstr "静音这个设备的音频输出"
+
+#: ../src/pama-sink-widget.c:202 ../src/pama-source-widget.c:202
+msgid "Set as default"
+msgstr "设置为默认"
+
+#: ../src/pama-sink-widget.c:329 ../src/pama-sink-widget.c:346
+#: ../src/pama-source-widget.c:345 ../src/pama-source-widget.c:362
+msgid "Normal"
+msgstr "正常"
+
+#: ../src/pama-source-output-widget.c:159
+msgid "Select which input device to use for this application"
+msgstr "选择这个应用的输入设备"
+
+#: ../src/pama-source-output-widget.c:339 ../src/pama-source-widget.c:318
+#, c-format
+msgid "Monitor of %s"
+msgstr "%s的监测器"
+
+#: ../src/pama-source-popup.c:88
+msgid "Audio Sources"
+msgstr "音频源"
+
+#: ../src/pama-source-widget.c:193
+msgid "Mute audio input from this device"
+msgstr "静音这个设备的输入"
+
+#: ../src/PulseAudioMixerApplet.server.in.in.h:1
+msgid "Adjust the volume of applications and output devices"
+msgstr "调节程序与输出设备的音量"
+
+#: ../src/PulseAudioMixerApplet.xml.h:1
+msgid "Mute _playback"
+msgstr "回放静音(_P)"
+
+#: ../src/PulseAudioMixerApplet.xml.h:2
+msgid "Mute _recording"
+msgstr "录音静音(_R)"
+
+#: ../src/PulseAudioMixerApplet.xml.h:3
+msgid "_About"
+msgstr "关于 (_A)"
+
+#: ../src/PulseAudioMixerApplet.xml.h:4
+msgid "_Launch mixer"
+msgstr "运行混合器"

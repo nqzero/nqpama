@@ -1,0 +1,132 @@
+# Portuguese translation for pama
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the pama package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pama\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-06-30 00:30+1000\n"
+"PO-Revision-Date: 2010-02-07 02:27+0000\n"
+"Last-Translator: Launchpad Translations Administrators "
+"<rosetta@launchpad.net>\n"
+"Language-Team: Portuguese <pt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-02-08 04:47+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../src/main.c:34 ../src/main.c:50 ../src/pama-pulse-context.c:305
+#: ../src/PulseAudioMixerApplet.server.in.in.h:2
+msgid "PulseAudio Mixer Applet"
+msgstr "PulseAudio Mixer Applet"
+
+#: ../src/pama-applet.c:87 ../src/pama-applet.c:88 ../src/pama-applet.c:188
+#: ../src/pama-applet.c:189
+msgid "Not connected to PulseAudio server"
+msgstr "Não conectado ao servidor PulseAudio"
+
+#: ../src/pama-applet.c:167 ../src/pama-applet.c:168
+msgid "No information received yet"
+msgstr "Nenhuma informação recebida"
+
+#: ../src/pama-applet.c:321 ../src/pama-applet.c:388
+msgid "muted"
+msgstr "Silenciado"
+
+#: ../src/pama-applet.c:364
+msgid "No information for the default output device is available"
+msgstr ""
+"Nenhuma informação disponível para o dispositivo de saída prédefinido"
+
+#: ../src/pama-applet.c:419
+msgid "No information for the default input device is available"
+msgstr ""
+"Nenhuma informação disponível para o dispositivo de entrada prédefinido"
+
+#: ../src/pama-applet.c:600
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  asensio https://launchpad.net/~asensio\n"
+"  nglnx https://launchpad.net/~nglnx"
+
+#: ../src/pama-applet.c:607
+msgid "About Pulseaudio Mixer Applet"
+msgstr "Sobre Pulseaudio Mixer Applet"
+
+#: ../src/pama-applet.c:610
+msgid "Per-application volume control for your GNOME panel."
+msgstr "Aplicação de controlo de volume para o painel do GNOME"
+
+#: ../src/pama-applet.c:611
+msgid "© 2009 Vassili Geronimos"
+msgstr "© 2009 Vassili Geronimos"
+
+#: ../src/pama-sink-input-widget.c:175
+msgid "Mute this application's audio output"
+msgstr "Silenciar a saída audio desta aplicação"
+
+#: ../src/pama-sink-input-widget.c:181
+msgid "Select which output device to use for this application"
+msgstr "Seleccionar que dispositivo de saída usar para esta aplicação"
+
+#: ../src/pama-sink-popup.c:88
+msgid "Playback Devices"
+msgstr "Dispositivos de Reprodução"
+
+#: ../src/pama-sink-popup.c:104 ../src/pama-source-popup.c:104
+msgid "Applications"
+msgstr "Aplicações"
+
+#: ../src/pama-sink-widget.c:193
+msgid "Mute audio output from this device"
+msgstr "Silenciar saída áudio para este dispositivo"
+
+#: ../src/pama-sink-widget.c:202 ../src/pama-source-widget.c:202
+msgid "Set as default"
+msgstr "Definir como Prédefinição"
+
+#: ../src/pama-sink-widget.c:329 ../src/pama-sink-widget.c:346
+#: ../src/pama-source-widget.c:345 ../src/pama-source-widget.c:362
+msgid "Normal"
+msgstr "Normal"
+
+#: ../src/pama-source-output-widget.c:159
+msgid "Select which input device to use for this application"
+msgstr "Selecionar que dispositivo de entrada usar para estas aplicação"
+
+#: ../src/pama-source-output-widget.c:339 ../src/pama-source-widget.c:318
+#, c-format
+msgid "Monitor of %s"
+msgstr "Monitor de %s"
+
+#: ../src/pama-source-popup.c:88
+msgid "Audio Sources"
+msgstr "Fontes Áudio"
+
+#: ../src/pama-source-widget.c:193
+msgid "Mute audio input from this device"
+msgstr "Silenciar entrada áudio para este dispositivo"
+
+#: ../src/PulseAudioMixerApplet.server.in.in.h:1
+msgid "Adjust the volume of applications and output devices"
+msgstr "Ajustar volume das aplicações e dos dispositivos de saída"
+
+#: ../src/PulseAudioMixerApplet.xml.h:1
+msgid "Mute _playback"
+msgstr "Silenciar _reprodução"
+
+#: ../src/PulseAudioMixerApplet.xml.h:2
+msgid "Mute _recording"
+msgstr "Selienciar _Gravação"
+
+#: ../src/PulseAudioMixerApplet.xml.h:3
+msgid "_About"
+msgstr "_Sobre"
+
+#: ../src/PulseAudioMixerApplet.xml.h:4
+msgid "_Launch mixer"
+msgstr "_Lançar misturador"

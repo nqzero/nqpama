@@ -1,0 +1,28 @@
+PulseAudio Mixer Applet
+=======================
+
+Pulseaudio Mixer Applet is a small applet for the GNOME panel that can control
+both input and output device volumes, and individual playback stream volumes.
+It also provides a convenient way to change the default input and output
+devices, and move application audio streams to different devices.
+
+
+
+Requirements
+------------
+
+This applet can be built with the following:
+
+	libpulse 0.9.15
+	gtk+ 2.16
+	glib 2.14
+	libpanel-applet 2.10
+	intltool 0.35.0
+
+
+
+Reporting Bugs
+--------------
+
+Bugs should be reported on this project's Launchpad page:
+	https://launchpad.net/pama

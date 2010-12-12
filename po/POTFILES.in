@@ -1,0 +1,17 @@
+src/main.c
+src/pama-applet.c
+src/pama-popup.c
+src/pama-pulse-client.c
+src/pama-pulse-context.c
+src/pama-pulse-sink.c
+src/pama-pulse-sink-input.c
+src/pama-pulse-source.c
+src/pama-pulse-source-output.c
+src/pama-sink-input-widget.c
+src/pama-sink-popup.c
+src/pama-sink-widget.c
+src/pama-source-output-widget.c
+src/pama-source-popup.c
+src/pama-source-widget.c
+src/PulseAudioMixerApplet.server.in.in
+src/PulseAudioMixerApplet.xml
