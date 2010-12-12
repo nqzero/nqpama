@@ -26,3 +26,4 @@ nbproject/Makefile*
 nbproject/private
 nbproject/Package-Default.bash
 
+*.o
