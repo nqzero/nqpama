@@ -75,3 +75,12 @@ note: verbose make output
 
 
 
+Netbeans
+--------
+
+it was easy to import this project into pama:
+    create a new C project from existing sources
+    choose the automatic configuration
+
+the netbeans-ified version of the project is checked in as branch: netbeans
+
