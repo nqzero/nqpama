@@ -1,0 +1,16 @@
+Changes relative to lp:pama:r42
+-------------------------------
+
+removed the use of the pointer/keyboard grabs which made debugging difficult
+    ie, caused a deadlock if a breakpoint was set in a callback while the grab was held
+added build instructions
+
+
+
+Changelog "Rules"
+-----------------
+
+notable changes may be noted here
+    top-post
+
+

@@ -21,13 +21,6 @@ This applet can be built with the following:
 
 
 
-Reporting Bugs
---------------
-
-Bugs should be reported on this project's Launchpad page:
-	https://launchpad.net/pama
-
-
 About this Repository
 ---------------------
 
@@ -35,15 +28,6 @@ this is a branch of the bazaar repository: https://launchpad.net/pama by Vassili
 the most recent actity recent activity was this update:
   42. By Vassili Geronimos on 2010-04-22, ie almost 8 months ago
 goals: make it easier to build and run in a debugger
-
-
-Changes relative to Parent
---------------------------
-
-removed the use of the pointer/keyboard grabs which made debugging difficult
-    ie, caused a deadlock if a breakpoint was set in a callback while the grab was held
-added build instructions
-
 
 
 Build and Install from Source
@@ -60,6 +44,8 @@ to build:
     CFLAGS="-g -O0" ./configure
     make
     make install
+
+note: ./scripts/autogen.sh performs the above up to and including autoconf
 
 if any of the dependencies are missing, they should cause errors when ./configure is run
     you'll need the development versions of the dependencies, ie the include files
@@ -78,9 +64,6 @@ note: verbose make output
 Netbeans
 --------
 
-it was easy to import this project into pama:
-    create a new C project from existing sources
-    choose the automatic configuration
+this project can be imported into netbeans ... see docs/netbeans.txt
 
-the netbeans-ified version of the project is checked in as branch: netbeans
 

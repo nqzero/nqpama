@@ -1,0 +1,22 @@
+Netbeans
+--------
+
+it was easy to import this project into netbeans
+    create a new C project from existing sources
+    choose the automatic configuration
+
+the netbeans-ified version of the project is checked in as branch: netbeans
+    netbeans changes some of the IDE files in non-portable and unnecessary ways
+    as a result, i'm working on master and only plan on updating the netbeans branch with IDE specific changes
+
+to add the IDE specific files (so that it can be opened as a netbeans project)
+    git checkout netbeans -- nbproject Makefile-pama.mk
+
+switching to the netbeans branch is more complicated ...
+    the nb-specific files are gitignored in master, so need to manually move them
+    probably the best thing to do is "mkdir bak; mv nbproject Makefile-pama.mk bak"
+    git checkout netbeans
+    and then manually merge the changes from bak
+    this should only be done when there's an IDE specific change that you want to 'save'
+
+
