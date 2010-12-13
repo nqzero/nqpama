@@ -25,3 +25,4 @@ src/.deps
 nbproject/private
 
 *.o
+nbproject/Package-Default.bash
