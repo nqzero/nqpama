@@ -2,9 +2,12 @@ Netbeans
 --------
 
 it was easy to import this project into netbeans
+    follow the build instruction in README
     create a new C project from existing sources
     choose the automatic configuration
     this uses the C/C++ plugin, tested with version 1.9.3
+    netbeans will rerun ./configure
+
 
 the netbeans-ified version of the project is checked in as branch: netbeans
     netbeans changes some of the IDE files in non-portable and unnecessary ways
@@ -19,5 +22,13 @@ switching to the netbeans branch is more complicated ...
     git checkout netbeans
     and then manually merge the changes from bak
     this should only be done when there's an IDE specific change that you want to 'save'
+
+
+
+to open an existing netbeans project
+    run the build instructions thru at least ./configure
+    add the nb-specific files (see above)
+    open the project
+
 
 
