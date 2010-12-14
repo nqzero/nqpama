@@ -60,6 +60,47 @@ note: verbose make output
     to get the verbose output, use "make V=1"
 
 
+Running
+-------
+
+verify that:
+    PulseAudioMixerApplet.server
+exists in your bonobo "servers" directory, ie
+    ubuntu 10.10:     /usr/lib/bonobo/servers
+if not, eg because you've used a custom configure prefix, copy or link the server file to that location
+
+right click on the panel, select "add to panel"
+    choose "PulseAudio Mixer Applet"
+
+the applet provides 2 icons, one above the other - one for sinks (playback) and the other for sources
+    click on an icon to activate it
+    a volume slider and mute button are provided for each device and application
+    clicking on the "default" button on a device will set it as the default
+    clicking on the "device" button on an application will route the audio to/from the device that you choose
+        note: the sink and source need to be specified independently
+        eg, to move an application to a headset
+            click on sinks and select the headset as the application's device
+            then do the same for sources
+
+Debugging
+---------
+
+when an applet is added to the panel, or a loaded applet exits and the user selects "Reload",
+    the panel will load attempt to load the applet
+    if an instance is already running, it will be used
+    otherwise, it will look for the binary that the server file names and execute it
+
+if the applet is already loaded, kill it and the panel will offer to automatically "Reload" it
+    killall pulseaudio-mixer-applet
+
+run the applet (note: the applet will wait until it is activated), eg
+    from the command line: ./src/pulseaudio-mixer-applet
+    or from netbeans:      Debug::Debug Project
+
+either "Reload" the applet using the panel dialog or add the applet to the panel
+    the applet will be activated and appear in the panel
+    if you're running in a debugger, you should be able to set breakpoints and access the full state
+
 
 Netbeans
 --------

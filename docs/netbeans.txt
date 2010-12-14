@@ -4,6 +4,7 @@ Netbeans
 it was easy to import this project into netbeans
     create a new C project from existing sources
     choose the automatic configuration
+    this uses the C/C++ plugin, tested with version 1.9.3
 
 the netbeans-ified version of the project is checked in as branch: netbeans
     netbeans changes some of the IDE files in non-portable and unnecessary ways
