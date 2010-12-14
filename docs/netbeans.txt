@@ -15,6 +15,8 @@ the netbeans-ified version of the project is checked in as branch: netbeans
 
 to add the IDE specific files (so that it can be opened as a netbeans project)
     git checkout remotes/origin/netbeans -- nbproject Makefile-pama.mk
+    git reset                    # the checkout adds the "new" files ... undo the add
+
 
 switching to the netbeans branch is more complicated ...
     the nb-specific files are gitignored in master, so need to manually move them
